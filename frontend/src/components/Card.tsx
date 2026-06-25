@@ -4,11 +4,12 @@ interface CardProps {
   children: React.ReactNode;
   className?: string;
   hoverable?: boolean;
+  style?: React.CSSProperties;
 }
 
-export function Card({ children, className = '', hoverable = false }: CardProps) {
+export function Card({ children, className = '', hoverable = false, style }: CardProps) {
   return (
-    <div className={`glass-panel ${hoverable ? 'glass-panel-hover' : ''} ${className}`}>
+    <div className={`glass-panel ${hoverable ? 'glass-panel-hover' : ''} ${className}`} style={style}>
       {children}
     </div>
   );

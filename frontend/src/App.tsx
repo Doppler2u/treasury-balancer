@@ -6,13 +6,13 @@ import {
   BarChart3, FileText, Loader2, Copy, CheckCircle2,
   Activity, Zap, BookOpen
 } from 'lucide-react';
-import { Button } from './components/Button.tsx';
-import { Card, CardContent, CardHeader } from './components/Card.tsx';
-import { Input } from './components/Input.tsx';
-import { EXAMPLE_DEPOSITS, EXAMPLE_SCANS } from './lib/examples.ts';
+import { Button } from './components/Button';
+import { Card, CardContent, CardHeader } from './components/Card';
+import { Input } from './components/Input';
+import { EXAMPLE_DEPOSITS, EXAMPLE_SCANS } from './lib/examples';
 import {
   connectWallet, createGenlayerClient, shortAddress, switchToGenlayer
-} from './lib/genlayer.ts';
+} from './lib/genlayer';
 
 const CONTRACT_ADDRESS = "0xb7F9379C2B41382A8032893B11cB96329526d7c7";
 const EXPLORER_URL = "https://explorer-studio.genlayer.com";
